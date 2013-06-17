@@ -13257,23 +13257,25 @@
 		0AFD8DD8128465B4004B7863 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
 				COPY_PHASE_STRIP = NO;
 				DEBUG = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = Framework;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		0AFD8DD9128465B4004B7863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
 				COPY_PHASE_STRIP = YES;
 				DEBUG = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				PRODUCT_NAME = Framework;
+				SDKROOT = macosx10.7;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -13282,8 +13284,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
+				"ARCHS[sdk=*]" = x86_64;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
@@ -13306,7 +13308,7 @@
 				);
 				PRODUCT_NAME = AWSiOSSDK;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -13315,8 +13317,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
+				"ARCHS[sdk=*]" = x86_64;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DSTROOT = /tmp/s3.dst;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -13339,7 +13341,7 @@
 				);
 				PRODUCT_NAME = AWSiOSSDK;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -13347,7 +13349,7 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -13359,14 +13361,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = x86_64;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -13377,7 +13379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

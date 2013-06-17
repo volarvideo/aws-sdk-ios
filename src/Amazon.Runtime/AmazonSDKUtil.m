@@ -51,8 +51,13 @@ static NSTimeInterval _clockskew = 0.0;
 
 +(NSString *)userAgentString
 {
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
     NSString *sn  = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
     NSString *sv  = [[UIDevice currentDevice] systemVersion];
+#elif defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
+    NSString *sn  = [[[NSProcessInfo processInfo] operatingSystemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+    NSString *sv  = [[NSProcessInfo processInfo] operatingSystemVersionString];
+#endif
     NSString *loc = [[NSLocale currentLocale] localeIdentifier];
     NSString *ua  = [NSString stringWithFormat:AWS_SDK_USER_AGENT_FORMAT, AWS_SDK_VERSION, sn, sv, loc];
 

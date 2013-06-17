@@ -33,9 +33,7 @@ then
 	echo "Cleaning Completed"
 	exit 0
 else
-	xcodebuild -configuration Release -project "${PROJECT}.xcodeproj" -target "${PROJECT}" -sdk iphoneos
-	xcodebuild -configuration Release -project "${PROJECT}.xcodeproj" -target "${PROJECT}" -sdk iphonesimulator
-
+	xcodebuild -configuration Release -project "${PROJECT}.xcodeproj" -target "${PROJECT}" -sdk macosx10.7
 
 	# This is the full name of the framework we'll
 	# build
@@ -60,8 +58,7 @@ else
 
 	# Check that this is what your static libraries
 	# are called
-	FRAMEWORK_INPUT_ARM_FILES="build/$BUILD_TYPE-iphoneos/lib${PROJECT}.a"
-	FRAMEWORK_INPUT_I386_FILES="build/$BUILD_TYPE-iphonesimulator/lib${PROJECT}.a"
+	FRAMEWORK_INPUT_MAC_FILES="build/$BUILD_TYPE/lib${PROJECT}.a"
 
 
 	# The trick for creating a fully usable library is
@@ -73,7 +70,7 @@ else
 	# The library file is given the same name as the
 	# framework with no .a extension.
 	echo "Framework: Creating library..."
-	lipo -create "$FRAMEWORK_INPUT_ARM_FILES" "$FRAMEWORK_INPUT_I386_FILES" -o "$FRAMEWORK_DIR/Versions/Current/$FRAMEWORK_NAME"
+	cp "$FRAMEWORK_INPUT_MAC_FILES" "$FRAMEWORK_DIR/Versions/Current/$FRAMEWORK_NAME"
 
 
 	# Now copy the final assets over: your library
