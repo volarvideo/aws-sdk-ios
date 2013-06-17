@@ -1,7 +1,7 @@
 aws-sdk-ios
 ===========
 
-AWS SDK for OS X. Created by modifying the official AWS SDK for iOS. For more information on the AWS SDK for iOS, see the AWS web site:
+AWS SDK framework for OS X. Created by modifying the official AWS SDK for iOS. This framework works for 64-bit machines, Mac OS X 10.7+. For more information on the AWS SDK for iOS, see the AWS web site:
 
 http://aws.amazon.com/sdkforios
 
