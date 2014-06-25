@@ -33,7 +33,7 @@ then
 	echo "Cleaning Completed"
 	exit 0
 else
-	xcodebuild -configuration Release -project "${PROJECT}.xcodeproj" -target "${PROJECT}" -sdk macosx10.7
+	xcodebuild -configuration Release -project "${PROJECT}.xcodeproj" -target "${PROJECT}" -sdk macosx
 
 	# This is the full name of the framework we'll
 	# build

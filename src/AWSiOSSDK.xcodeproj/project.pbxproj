@@ -13262,8 +13262,9 @@
 				DEBUG = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Framework;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -13274,8 +13275,9 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Framework;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -13308,7 +13310,7 @@
 				);
 				PRODUCT_NAME = AWSiOSSDK;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -13341,7 +13343,7 @@
 				);
 				PRODUCT_NAME = AWSiOSSDK;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
